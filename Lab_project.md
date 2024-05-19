@@ -2,7 +2,7 @@ DSC 200 Lab Project -Term 2232
 ================
 2024-05-19
 
-**Student Name:<alanoud>**
+**Student Name: alanoud **
 
 **Student ID:\<2221005145\>**
 
@@ -262,10 +262,11 @@ exactly the same for dogs and cats.
 \`What names are more common for cats than dogs? The ones above the line
 or the ones below the line?
 
-\`Answer here………………
+\`Answer here…….Dog:Lucy.cat:Luna……….. ‏
 
 \`Is the relationship between the two variables (proportion of cats with
 a given name and proportion of dogs with a given name) positive or
 negative? What does this mean in context of the data?
 
-\`Answer here ………….
+\`Answer here .positive,as the popularity of a name for dogs
+increases,so does the. popularity of that name for cats…………
