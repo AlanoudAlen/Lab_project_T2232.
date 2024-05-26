@@ -359,27 +359,21 @@ filter(seattlepets, animal_name %in% top_10_names)
 \`b. Plot the counts of the pet names (animal_name) intop_10_names
 
 ``` r
-top_10_names <- seattlepets %>% 
-filter(animal_name %in% c( "Lucy"  , "Charlie" , "Luna" , "Bella" , "Max"    , 
-                           "Daisy" , "Molly"   , "Jack" , "Lily"  , "Stella" ))
-top_10_names
+# Create a subset of data for the top 10 most common pet names
+top_10_names <- c("Lucy", "Charlie", "Luna", "Bella", "Max", "Cooper", "Daisy", "Buddy", "Molly", "Stella")
+top_10_subset <- filter(seattlepets, animal_name %in% top_10_names)
+
+# Plot the counts of the pet names segmented by species
+pet_names_plot <- ggplot(top_10_subset, aes(x = animal_name, fill = species)) +
+                  geom_bar(position = "dodge") +
+                  labs(title = "Counts of Top 10 Pet Names Segmented by Species", x = "Pet Name", y = "Count") +
+                  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Display the plot
+print(pet_names_plot)
 ```
 
-    ## # A tibble: 2,974 × 8
-    ##    license_issue_date license_number animal_name species primary_breed          
-    ##    <date>             <chr>          <chr>       <chr>   <chr>                  
-    ##  1 2018-11-25         S120480        Charlie     Dog     Retriever, Labrador    
-    ##  2 2018-11-03         829563         Max         Dog     Retriever, Labrador    
-    ##  3 2018-10-29         732106         Lily        Cat     Domestic Shorthair     
-    ##  4 2018-11-25         895808         Max         Cat     Domestic Shorthair     
-    ##  5 2018-11-26         834841         Daisy       Dog     Terrier, American Pit …
-    ##  6 2018-12-13         8003804        Charlie     Dog     Border Collie          
-    ##  7 2018-11-06         S125292        Jack        Cat     Domestic Shorthair     
-    ##  8 2018-11-01         835179         Stella      Dog     Retriever, Labrador    
-    ##  9 2018-12-14         950094         Molly       Dog     Retriever, Labrador    
-    ## 10 2018-11-24         S137301        Lucy        Dog     Hound                  
-    ## # ℹ 2,964 more rows
-    ## # ℹ 3 more variables: secondary_breed <chr>, zip_code <chr>, pet <chr>
+![](Lab_project_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 \`10. (2 points)
 
