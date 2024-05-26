@@ -33,14 +33,7 @@ num_pets <- nrow(seattlepets)
 num_pets
 ```
 Write your narrative here
-
-Write your narrative here Counting Pets: num_pets <- nrow(seattlepets):
-Counts the rows in the dataset seattlepets, storing the count in num_pets.
-Displaying Count: num_pets: Displays the total count of pets stored in
-num_pets. Brief Summary: This code counts the total number of pets in the
-dataset seattlepets and displays the count. Each row represents one pet in
-the dataset.
-
+ Counting Pets: num_pets <- nrow(seattlepets): Counts the rows in the dataset seattlepets, storing the count in num_pets. Displaying Count: num_pets: Displays the total count of pets stored in num_pets. Brief Summary: This code counts the total number of pets in the dataset seattlepets and displays the count. Each row represents one pet int he
 
 `2. (2 points)
 
@@ -49,7 +42,7 @@ the dataset.
 num_variables <- ncol(seattlepets)
 num_variables
 ```
-Write your narrative below
+
 Write your narrative below Counting Variables: num_variables <-
 ncol(seattlepets): Calculates the number of variables (columns) in the
 seattlepets dataset. The ncol() function returns the number of variables in the
@@ -85,7 +78,7 @@ different species among the registered pets.
 
 `4. (2 points)
 ```{r}
-# Filter records for species Pig
+  # Filter records for species Pig
 pig_records <- filter(seattlepets, species == "Pig")
 
 # Arrange the filtered records by pet names (animal_name)
@@ -94,7 +87,6 @@ sorted_pig_records <- arrange(pig_records, animal_name)
 # Display the sorted pig records
 sorted_pig_records
 ```
-Write your narrative here
 Write your narrative here Counting Pet Name Frequency:
 pet_name_frequency <- table(seattlepets$animal_name): Calculates the
 frequency of each pet name in the seattlepets dataset. The table() function
@@ -347,8 +339,8 @@ ggplot(comb_name_props, aes(x = cat_prop, y = dog_prop)) +
 
 `What names are more common for cats than dogs? The ones above the line or the ones below the line?
 
-`Answer here.......Dog:Lucy.cat:Luna..... The names that are more common for cats than dogs are the
-ones above the diagonal line (x = y) on the plot......
+`Answer here.. The names that are more common for cats than dogs are the
+ones above the diagonal line (x = y) on the plot.
 ‏ 
 
 `Is the relationship between the two variables (proportion of cats with a given name and proportion of dogs with a given name) positive or negative? What does this mean in context of the data?

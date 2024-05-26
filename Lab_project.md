@@ -30,14 +30,12 @@ num_pets
 
     ## [1] 52519
 
-Write your narrative here
-
 Write your narrative here Counting Pets: num_pets \<- nrow(seattlepets):
 Counts the rows in the dataset seattlepets, storing the count in
 num_pets. Displaying Count: num_pets: Displays the total count of pets
 stored in num_pets. Brief Summary: This code counts the total number of
 pets in the dataset seattlepets and displays the count. Each row
-represents one pet in the dataset.
+represents one pet int he
 
 \`2. (2 points)
 
@@ -49,15 +47,15 @@ num_variables
 
     ## [1] 7
 
-Write your narrative below Write your narrative below Counting
-Variables: num_variables \<- ncol(seattlepets): Calculates the number of
-variables (columns) in the seattlepets dataset. The ncol() function
-returns the number of variables in the data frame passed to it, which in
-this case is seattlepets. The resulting number is stored in the variable
-num_variables. Displaying Count: num_variables: Displays the total count
-of variables stored in num_variables. Brief Summary: This code counts
-the total number of variables in the seattlepets dataset and displays
-the count. Each column represents one variable in the dataset.
+Write your narrative below Counting Variables: num_variables \<-
+ncol(seattlepets): Calculates the number of variables (columns) in the
+seattlepets dataset. The ncol() function returns the number of variables
+in the data frame passed to it, which in this case is seattlepets. The
+resulting number is stored in the variable num_variables. Displaying
+Count: num_variables: Displays the total count of variables stored in
+num_variables. Brief Summary: This code counts the total number of
+variables in the seattlepets dataset and displays the count. Each column
+represents one variable in the dataset.
 
 \`3. (2 points)
 
@@ -87,7 +85,7 @@ of different species among the registered pets.
 \`4. (2 points)
 
 ``` r
-# Filter records for species Pig
+  # Filter records for species Pig
 pig_records <- filter(seattlepets, species == "Pig")
 
 # Arrange the filtered records by pet names (animal_name)
@@ -108,20 +106,20 @@ sorted_pig_records
     ## 6 2018-05-12         S141788        <NA>        Pig     Standard     
     ## # ℹ 2 more variables: secondary_breed <chr>, zip_code <chr>
 
-Write your narrative here Write your narrative here Counting Pet Name
-Frequency: pet_name_frequency \<- table(seattlepets\$animal_name):
-Calculates the frequency of each pet name in the seattlepets dataset.
-The table() function creates a frequency table of the specified
-variable, which in this case is animal_name extracted from the
-seattlepets dataset. It counts the occurrences of each unique pet name
-in the animal_name column and returns a table summarizing the counts.
-The resulting frequency table is stored in the variable
-pet_name_frequency. Sorting the Frequency Table: sorted_pet_names \<-
-sort(pet_name_frequency, decreasing = TRUE): Sorts the frequency table
-pet_name_frequency in descending order based on the count of each pet
-name. The sort() function arranges the elements of the frequency table
-in descending order, with the most common pet names appearing first. The
-parameter decreasing = TRUE specifies that the sorting should be done in
+Write your narrative here Counting Pet Name Frequency:
+pet_name_frequency \<- table(seattlepets\$animal_name): Calculates the
+frequency of each pet name in the seattlepets dataset. The table()
+function creates a frequency table of the specified variable, which in
+this case is animal_name extracted from the seattlepets dataset. It
+counts the occurrences of each unique pet name in the animal_name column
+and returns a table summarizing the counts. The resulting frequency
+table is stored in the variable pet_name_frequency. Sorting the
+Frequency Table: sorted_pet_names \<- sort(pet_name_frequency,
+decreasing = TRUE): Sorts the frequency table pet_name_frequency in
+descending order based on the count of each pet name. The sort()
+function arranges the elements of the frequency table in descending
+order, with the most common pet names appearing first. The parameter
+decreasing = TRUE specifies that the sorting should be done in
 descending order. Displaying the Top Ten Most Common Pet Names:
 head(sorted_pet_names, 10): Displays the top ten most common pet names
 from the sorted frequency table sorted_pet_names. The head() function
@@ -404,9 +402,8 @@ exactly the same for dogs and cats.
 \`What names are more common for cats than dogs? The ones above the line
 or the ones below the line?
 
-\`Answer here…….Dog:Lucy.cat:Luna….. The names that are more common for
-cats than dogs are the ones above the diagonal line (x = y) on the
-plot…… ‏
+\`Answer here.. The names that are more common for cats than dogs are
+the ones above the diagonal line (x = y) on the plot. ‏
 
 \`Is the relationship between the two variables (proportion of cats with
 a given name and proportion of dogs with a given name) positive or
